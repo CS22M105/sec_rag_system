@@ -1,0 +1,22 @@
+# Core dependencies
+pypdf2==3.0.1
+sentence-transformers==2.2.2
+faiss-cpu
+openai==1.54.0      # Updated for compatibility
+httpx==0.27.0       # Added for openai compatibility
+python-dotenv==1.0.0
+pyyaml==6.0.1
+tqdm==4.66.5
+
+# Optional: Web interface
+streamlit==1.37.1
+
+# Optional: For web scraping (if needed)
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Testing
+pytest==7.4.0
+
+# Development
+ipython==8.14.0

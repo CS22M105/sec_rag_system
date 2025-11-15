@@ -1,0 +1,22 @@
+app:
+  company: "Apple Inc."
+  sec_ticker: "AAPL"
+  year: "2023"
+
+processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  min_chunk_length: 50
+
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+  vector_store_path: "./models/faiss_index"
+
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.0  # Disabled - return top_k regardless of score
+
+generation:
+  model: "gpt-4o-mini"  # ← CHANGED: Best model for RAG (cheap + good)
+  temperature: 0.1
+  max_tokens: 500
