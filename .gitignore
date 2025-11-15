@@ -60,4 +60,5 @@ test_output/
 
 # API keys (if any)
 *.key
-secrets.yaml
+secrets.yamlmodels/faiss_index_meta.pkl
+company/lib/python3.12/
