@@ -93,8 +93,7 @@ git commit -m "Initial commit: SEC 10-K RAG system"
 
 #### Create GitHub Repository
 1. Go to GitHub and create a new repository
-2. Don't initialize with README (we have one)
-3. Follow GitHub's instructions:
+2. Follow GitHub's instructions:
 
 ```bash
 git remote add origin https://github.com/yourusername/sec-rag-system.git
