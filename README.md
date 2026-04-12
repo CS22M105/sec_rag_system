@@ -29,9 +29,10 @@ sec_rag_system/
 ├── tests/
 │   └── test_vector.py
 │   └── api_check.py
+│   └── test_rag_system.py
+│   └── app.py
 ├── config.yaml
 ├── requirements.txt
-├── test_rag_system.py
 ├── .gitignore
 └── README.md
 ```
@@ -87,26 +88,7 @@ This will:
 streamlit run app.py
 ```
 
-### 5. Git Setup
-
-#### Initialize Repository
-```bash
-git init
-git add .
-git commit -m "Initial commit: SEC 10-K RAG system"
-```
-
-#### Create GitHub Repository
-1. Go to GitHub and create a new repository
-2. Follow GitHub's instructions:
-
-```bash
-git remote add origin https://github.com/yourusername/sec-rag-system.git
-git branch -M main
-git push -u origin main
-```
-
-### 6. Expected Output
+### 5. Expected Output
 
 When you run `test_rag_system.py`, you should see:
 
@@ -203,31 +185,3 @@ The company is focused on expanding its market opportunities related to these ca
 TEST COMPLETE!
 ================================================================================
 ...
-```
-
-### 7. What's Happening Under the Hood
-
-1. **Text Extraction** (`data_loader.py`): 
-   - Reads PDF file
-   - Extracts text from all pages
-   - Cleans the text
-
-2. **Text Processing** (`text_processor.py`):
-   - Identifies 10-K sections (Business, Risk Factors, etc.)
-   - Splits text into chunks with overlap
-   - Creates embeddings using sentence-transformers
-
-3. **Vector Storage** (`vector_store.py`):
-   - Stores embeddings in FAISS index
-   - Enables fast similarity search
-   - Saves/loads index to/from disk
-
-4. **Retrieval** (`retriever.py`):
-   - Converts question to embedding
-   - Finds most similar chunks
-   - Formats context for LLM
-
-5. **Generation** (`generator.py`):
-   - Sends question + context to OpenAI
-   - Gets natural language answer
-   - Returns formatted response
