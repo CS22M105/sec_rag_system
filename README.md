@@ -1,6 +1,11 @@
 # What is SEC 10-k filing report?
 A 10-K filing is an annual report required by the U.S. Securities and Exchange Commission (SEC) that public companies must file. It provides a comprehensive overview of the company's business, financial condition, and performance over the past fiscal year, including audited financial statements. The 10-K is the most comprehensive periodic report filed with the SEC and contains detailed information on topics such as the company's business, risks, executive compensation, and corporate governance.
 
+<img width="1470" height="956" alt="Screenshot 2025-11-15 at 10 30 32 AM" src="https://github.com/user-attachments/assets/27a768b4-10b8-4f02-b264-615d8d61a9f8" />
+
+<img width="1470" height="956" alt="Screenshot 2025-11-15 at 10 30 45 AM" src="https://github.com/user-attachments/assets/44778faf-967c-4a3c-9c6f-60e29fe758c9" />
+
+
 # SEC 10-K RAG System - Setup Guide
 
 ## Quick Start
